@@ -10,11 +10,11 @@ from components.map import Map
 from components.gridworld import GridWorld
 from components.pedestrian import Pedestrian
 import os
-from utils.helper import *
+from utils import *
 
 def new_World():
     map = Map(10, 1, 8)
-    sys = Car('sys', 0, 2, 10, 'low')
+    sys = Car('sys', 0, 3, 10, 'high')
     ped = Pedestrian('ped', None, 0, 8, 8)
     gridworld = GridWorld(map, sys, ped)
     return gridworld, sys, ped
